@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import { useState } from 'react';
+import Blog_card from '../components/blog_card';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <p>test dev</p>
+        <Blog_card />
+      <a style={{color:'blue'}} href="http://localhost:3000/about">Go to about page</a>
       </main>
     </>
   )
